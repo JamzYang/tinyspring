@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+    <bean id="user" class="com.jamz.entity.User">
+        <property name="name" value="shan"></property>
+        <property name="age" value="23"></property>
+    </bean>
+
+    <bean id="good" class="com.jamz.entity.Good">
+        <property name="name" value="bab"></property>
+        <property name="price" value="13"></property>
+    </bean>
+</beans>

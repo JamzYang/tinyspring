@@ -5,7 +5,7 @@ import com.jamz.core.beans.BeanDefinitionRegistry;
 
 import java.util.Map;
 
-public class DefaultListableBeanFactory implements BeanDefinitionRegistry {
+public class DefaultListableBeanFactory implements BeanDefinitionRegistry,BeanFactory {
     @Override
     public Map<String, BeanDefinition> getRegistry() {
         return null;
@@ -14,5 +14,10 @@ public class DefaultListableBeanFactory implements BeanDefinitionRegistry {
     @Override
     public void registerBeanDefinition(String beanName, BeanDefinition beanDefinition) {
 
+    }
+
+    @Override
+    public Object getBean(String name) {
+        return null;
     }
 }
